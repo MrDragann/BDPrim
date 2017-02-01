@@ -6,7 +6,8 @@ using System.Web.Mvc;
 
 namespace WebApplication4.Controllers
 {
-    public class HomeController : Controller
+    [Authorize]
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
