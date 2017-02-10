@@ -8,6 +8,6 @@ namespace IServices
 {
     public interface IMainServices
     {
-        IUserServices Users { get; set; } 
+        ICustomerServices Customers { get; set; } 
     }
 }

@@ -11,8 +11,8 @@ namespace Services
     {
         public MainServices()
         {
-            Users = new UserServices();
+            Customers = new CustomerServices();
         }
-        public IUserServices Users { get; set; }
+        public ICustomerServices Customers { get; set; }
     }
 }

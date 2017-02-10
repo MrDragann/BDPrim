@@ -15,19 +15,19 @@ namespace DataModel.Migrations
 
         protected override void Seed(DataModel.DataContext context)
         {
-            var admin = new User { UserName = "Andrew Peters", Password = "123456" };
-            var user = new User { UserName = "Brice Lambson", Password = "123456" };
-            context.Users.AddOrUpdate(
-              p => p.Id,
-              admin,
-              user,
-              new User { UserName = "Rowan Miller", Password = "123456" }
-            );
+            //var admin = new User { UserName = "Andrew Peters", Password = "123456" };
+            //var user = new User { UserName = "Brice Lambson", Password = "123456" };
+            //context.Customers.AddOrUpdate(
+            //  p => p.Id,
+            //  admin,
+            //  user,
+            //  new User { UserName = "Rowan Miller", Password = "123456" }
+            //);
 
-            context.Roles.AddOrUpdate(p => p.Id,
-                new Role { Id = TypeRoles.Admin, Name = "Admin", Users = new List<User> { admin } },
-                new Role { Id = TypeRoles.User, Name = "User", Users = new List<User> { user } }
-                );
+            //context.Orders.AddOrUpdate(p => p.Id,
+            //    new Role { Id = TypeRoles.Admin, Name = "Admin", Users = new List<User> { admin } },
+            //    new Role { Id = TypeRoles.User, Name = "User", Users = new List<User> { user } }
+            //    );
         }
     }
 }
